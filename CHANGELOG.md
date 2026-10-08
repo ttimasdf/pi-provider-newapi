@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-10-08
+
+### Fixed
+
+- Declare `typebox` as a `*` peer dependency instead of a regular dependency, matching Pi 1.0.0's host-provided module contract; the pinned copy remains a development dependency for local typechecking and tests.
+
+## [0.5.0] - 2026-08-07
+
 ### Breaking Changes
 
 - Replaced extension-owned `modelOverrides` with regex-based `modelApiOverrides`. Move metadata and compatibility overrides, including `sendSessionAffinityHeaders`, to Pi's `<agentDir>/models.json`.
