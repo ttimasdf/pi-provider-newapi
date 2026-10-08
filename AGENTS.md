@@ -56,3 +56,4 @@ Data flow: **config + Pi credential → discover → enrich → route API → bu
 - Tabs for indentation; TypeBox is the only direct runtime dependency beyond the two pi peer packages + Node built-ins.
 - Extract pure, deterministic logic as exported functions and unit-test it; keep I/O (fetch, fs, Pi APIs) thin.
 - Keep `package.json` `version` and the top `CHANGELOG.md` entry in sync; update both READMEs (`README.md` + `README_cn.md`) when user-facing behavior changes.
+- Bump versions only with `pnpm version <version> --sign-git-tag` (commits the bump and creates the signed `v<version>` tag).
